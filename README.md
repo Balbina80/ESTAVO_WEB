@@ -31,3 +31,9 @@ The forms are currently front-end demonstrations and do not transmit or store pe
 ## Ownership
 
 Copyright 2026 BJ Precision Business Solutions Ltd. All rights reserved.
+
+## v1.2.0 — Product Experience
+- Explore Demo Workspace replaces Book a Demo as the main CTA.
+- New interactive product showcase.
+- New Demo Workspace coming-soon page.
+- Updated version, navigation and conversion sections.

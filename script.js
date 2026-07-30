@@ -26,3 +26,18 @@ function bindForms(){modalContent?.querySelectorAll('form[data-form]').forEach(f
 document.querySelectorAll('main form[data-form]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();openModal(form.dataset.form==='quote'?'quote':'demo');setTimeout(()=>success(form.dataset.form),120);}));
 
 const counters=document.querySelectorAll('[data-count]');const counterObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=Number(el.dataset.count);let value=0;const step=Math.max(1,Math.ceil(target/18));const timer=setInterval(()=>{value=Math.min(target,value+step);el.textContent=value;if(value>=target)clearInterval(timer);},45);counterObserver.unobserve(el);}),{threshold:.7});counters.forEach(el=>counterObserver.observe(el));
+
+
+// Estavo v1.2.0 Product Experience tabs
+const experienceData = {
+ dashboard:{title:'Good morning, Barbara',metrics:[['Properties','248','12 added this year'],['Active tenants','236','98.9% occupied'],['Open maintenance','6','2 require attention'],['Compliance due soon','11','Next 30 days']],text:'Your portfolio is performing well. Six items need attention today, including two compliance deadlines and one rent follow-up.'},
+ properties:{title:'Property portfolio',metrics:[['Managed properties','248','Across 7 areas'],['Available','9','Ready to market'],['Occupied','236','95.2% of portfolio'],['Inspections due','14','This month']],text:'Three properties need marketing updates and two inspections should be booked this week.'},
+ compliance:{title:'Compliance overview',metrics:[['Total records','248','All properties linked'],['Active','229','92.3% compliant'],['Due soon','11','Next 30 days'],['Expired','8','Action required']],text:'Eight certificates require action. Estavo has grouped them by urgency and assigned the next steps.'},
+ finance:{title:'Finance visibility',metrics:[['Rent due','£242,500','This month'],['Received','£239,950','98.9% collected'],['Outstanding','£2,550','5 tenancies'],['Collection rate','98.9%','Up 1.2%']],text:'Collection is ahead of last month. Five balances remain outstanding, with reminders ready to send.'},
+ users:{title:'Users & roles',metrics:[['Active users','5','All verified'],['Administrators','2','Full access'],['Property managers','2','Portfolio access'],['Read-only users','1','Reporting access']],text:'Roles keep sensitive actions controlled while every team member sees the information needed for their work.'}
+};
+document.querySelectorAll('[data-experience]').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('[data-experience]').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
+ const d=experienceData[btn.dataset.experience]; const title=document.getElementById('experienceTitle'); const metrics=document.getElementById('experienceMetrics'); const text=document.getElementById('experienceText');
+ if(title) title.textContent=d.title; if(text) text.textContent=d.text; if(metrics) metrics.innerHTML=d.metrics.map(m=>`<article><small>${m[0]}</small><strong>${m[1]}</strong><span>${m[2]}</span></article>`).join('');
+}));
