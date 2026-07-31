@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estavo Demo Workspace</title>
+  <link rel="icon" type="image/png" href="assets/favicion.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/demo-workspace.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="demo-mode">
+<div class="demo-banner"><span><i class="fa-solid fa-lock"></i> Read-only Demo Workspace</span><strong>Harbour & Key Lettings · Peterborough</strong><a href="https://estavo.io/contact.html">Request a live demo</a></div>
+<div class="app-layout demo-layout">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><img src="assets/property-hub-logo.png" alt="Estavo"></div>
+    <nav class="sidebar-nav" id="demoNav">
+      <button class="active" data-view="dashboard"><i class="fa-solid fa-house"></i>Dashboard</button>
+      <button data-view="properties"><i class="fa-solid fa-building"></i>Properties</button>
+      <button data-view="people"><i class="fa-solid fa-users"></i>People</button>
+      <button data-view="compliance"><i class="fa-solid fa-shield-halved"></i>Compliance</button>
+      <button data-view="maintenance"><i class="fa-solid fa-wrench"></i>Maintenance</button>
+      <button data-view="finance"><i class="fa-solid fa-sterling-sign"></i>Finance</button>
+      <button data-view="documents"><i class="fa-regular fa-file-lines"></i>Documents</button>
+    </nav>
+    <div class="demo-sidebar-note"><i class="fa-solid fa-circle-info"></i><span>Sample data only. Changes are disabled.</span></div>
+  </aside>
+  <main class="dashboard demo-main">
+    <header class="demo-topbar"><div><p class="dashboard-date">Friday, 31 July 2026</p><h1 id="demoTitle">Good morning, Alex.</h1><p id="demoSubtitle">Here is what needs your attention today.</p></div><div class="demo-user"><span>AM</span><div><strong>Alex Morgan</strong><small>Branch Manager</small></div></div></header>
+    <section id="demoContent" aria-live="polite"></section>
+    <footer class="footer"><img src="assets/favicion.png" alt="Estavo" class="footer-favicon">© 2026 Estavo · Demo Workspace v2.1</footer>
+  </main>
+</div>
+<script src="js/demo-workspace.js"></script>
+</body>
+</html>

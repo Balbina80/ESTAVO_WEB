@@ -1,0 +1,85 @@
+/* ==========================================
+   ESTAVO UI FOUNDATION
+   TEMPORARY LEGACY COMPATIBILITY
+
+   Keep only until the related HTML/JS modules
+   have been standardised.
+========================================== */
+
+/* Legacy top header, retained in case an older page still uses it */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 40px;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+
+.logo h1 {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.logo p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Property links used in list/profile content */
+
+.property-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.property-link:hover {
+  text-decoration: underline;
+}
+
+/* Activity rows used by the current dashboard markup */
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 24px;
+  flex-shrink: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Existing overview form layout */
+
+.overview-card label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.overview-card input,
+.overview-card select,
+.overview-card textarea {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Existing report/document helpers */
+
+.current-report-box {
+  margin-bottom: 12px;
+}

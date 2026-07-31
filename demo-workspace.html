@@ -1,51 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description"
-        content="Explore the Estavo Demo Workspace — an interactive, read-only product experience.">
-    <title>Estavo Demo Workspace — Coming Soon</title>
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=1.2.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estavo | Read-only Demo Workspace</title>
+  <link rel="icon" type="image/png" href="assets/favicion.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/demo-workspace.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<body class="demo-body">
+  <div class="demo-banner">
+    <span><i class="fa-solid fa-lock"></i> Read-only Demo Workspace</span>
+    <strong>Harbour &amp; Key Lettings · Peterborough</strong>
+    <a href="index.html">Back to Estavo website</a>
+  </div>
 
-<body>
-    <header class="site-header">
-        <div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/estavo-logo.png"
-                    alt="Estavo"></a>
-            <div class="nav-actions" style="margin-left:auto"><a class="btn btn-ghost" href="index.html">Back to
-                    website</a><a class="btn btn-primary" href="contact.html">Contact Estavo</a></div>
-        </div>
-    </header>
-    <main class="demo-page">
-        <section class="container demo-coming"><span class="launch-pill">INTERACTIVE EXPERIENCE · COMING SOON</span>
-            <h1>Estavo Demo Workspace</h1>
-            <p>We are preparing a complete, secure and read-only workspace filled with realistic sample data. Soon you
-                will be able to explore Estavo without registering or booking a sales call.</p>
-            <div class="hero-actions" style="justify-content:center"><a class="btn btn-primary btn-large"
-                    href="contact.html">Join the launch list</a><a class="btn btn-secondary btn-large"
-                    href="pricing.html">View pricing</a></div>
-            <div class="demo-preview-card">
-                <article><small>Workspace</small><strong>Estavo Demo Workspace</strong><span>Realistic sample
-                        portfolio</span></article>
-                <article><small>Access</small><strong>Read only</strong><span>Safe, unrestricted exploration</span>
-                </article>
-                <article><small>Included</small><strong>Full product journey</strong><span>Properties, compliance,
-                        finance and more</span></article>
-                <article><small>Registration</small><strong>Not required</strong><span>Open the workspace
-                        instantly</span></article>
-            </div>
-        </section>
+  <div class="app-layout demo-app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo"><img src="assets/property-hub-logo.png" alt="Estavo"></div>
+      <nav class="sidebar-nav" id="demoNav" aria-label="Demo workspace navigation">
+        <a href="#dashboard" class="active" data-view="dashboard"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="#properties" data-view="properties"><i class="fa-solid fa-building"></i> Properties</a>
+        <a href="#landlords" data-view="landlords"><i class="fa-regular fa-user"></i> Landlords</a>
+        <a href="#tenants" data-view="tenants"><i class="fa-solid fa-users"></i> Tenants</a>
+        <a href="#applicants" data-view="applicants"><i class="fa-solid fa-user-clock"></i> Applicants</a>
+        <a href="#compliance" data-view="compliance"><i class="fa-solid fa-shield-halved"></i> Compliance</a>
+        <a href="#inventory" data-view="inventory"><i class="fa-regular fa-rectangle-list"></i> Inventory</a>
+        <a href="#maintenance" data-view="maintenance"><i class="fa-solid fa-wrench"></i> Maintenance</a>
+        <a href="#diary" data-view="diary"><i class="fa-regular fa-calendar"></i> Diary</a>
+        <a href="#documents" data-view="documents"><i class="fa-regular fa-file-lines"></i> Documents</a>
+        <a href="#finance" data-view="finance"><i class="fa-solid fa-sterling-sign"></i> Finance</a>
+        <a href="#reports" data-view="reports"><i class="fa-solid fa-chart-column"></i> Reports</a>
+        <a href="#settings" data-view="settings"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="#" class="danger-btn demo-disabled-action" aria-disabled="true"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+      </nav>
+      <div class="demo-sidebar-note"><i class="fa-solid fa-circle-info"></i><span>Sample data only. Changes are disabled.</span></div>
+    </aside>
+
+    <main class="dashboard" id="demoMain">
+      <div id="demoContent" aria-live="polite"></div>
+      <footer class="footer"><img src="assets/favicion.png" alt="Estavo" class="footer-favicon"> © 2026 Estavo. All rights reserved. <a href="index.html">Back to Estavo website</a> • Demo Workspace</footer>
     </main>
-    <footer class="footer">
-        <div class="container footer-bottom"><span>© 2026 Estavo. All rights reserved.</span><span>Built by BJ Precision
-                Business Solutions Ltd · Version 1.2.0</span></div>
-    </footer>
+  </div>
+  <script src="js/demo-workspace.js?v=2.2.3"></script>
 </body>
-
 </html>
