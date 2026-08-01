@@ -41,3 +41,64 @@ document.querySelectorAll('[data-experience]').forEach(btn=>btn.addEventListener
  const d=experienceData[btn.dataset.experience]; const title=document.getElementById('experienceTitle'); const metrics=document.getElementById('experienceMetrics'); const text=document.getElementById('experienceText');
  if(title) title.textContent=d.title; if(text) text.textContent=d.text; if(metrics) metrics.innerHTML=d.metrics.map(m=>`<article><small>${m[0]}</small><strong>${m[1]}</strong><span>${m[2]}</span></article>`).join('');
 }));
+
+// Estavo website contact form
+function bindContactForms() {
+  document.querySelectorAll('form[data-contact-form]').forEach((form) => {
+    if (form.dataset.contactBound === 'true') return;
+    form.dataset.contactBound = 'true';
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      const status = form.querySelector('[data-contact-status]');
+      const originalButtonText = submitButton?.textContent || 'Send enquiry';
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      if (status) {
+        status.textContent = 'Sending your enquiry...';
+        status.classList.remove('is-success', 'is-error');
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.error || 'Your enquiry could not be sent.');
+        }
+
+        form.reset();
+        if (status) {
+          status.textContent = 'Thank you. Your enquiry has been sent to the Estavo team.';
+          status.classList.add('is-success');
+        }
+      } catch (error) {
+        console.error('Contact form submission failed:', error);
+        if (status) {
+          status.textContent = error.message || 'Your enquiry could not be sent. Please email hello@estavo.io.';
+          status.classList.add('is-error');
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      }
+    });
+  });
+}
+
+bindContactForms();
