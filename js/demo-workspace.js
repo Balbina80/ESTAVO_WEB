@@ -68,7 +68,7 @@ function dashboard() {
         <h1 id="dashboardGreeting">Good morning, Alex.</h1>
         <p class="dashboard-welcome-text">Here is what needs your attention across your portfolio today.</p>
       </div>
-      <img src="assets/property-hub-logo.png" alt="Estavo" class="dashboard-welcome-logo">
+      <img src="assets/estavo-logo.png" alt="Estavo" class="dashboard-welcome-logo">
     </section>
 
     <section class="stats">
