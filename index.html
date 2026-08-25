@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2.2.0" />
+  <link rel="stylesheet" href="styles.css?v=2.2.1" />
 </head>
 
 <body>
@@ -351,7 +351,7 @@
       </div>
     </div>
     <div class="container footer-bottom"><span>© 2026 Estavo. All rights reserved.</span><span>Built by BJ Precision
-        Business Solutions Ltd · Website v2.2.0</span></div>
+        Business Solutions Ltd · Website v2.2.1</span></div>
   </footer>
 
   <div class="modal" id="modal" aria-hidden="true">
@@ -361,14 +361,19 @@
       <div id="modalContent"></div>
     </div>
   </div>
-  
+
+  <template id="demoTemplate">
+    <div class="modal-head"><span class="eyebrow">GUIDED DEMO</span>
       <h2 id="modalTitle">Request a guided Estavo demo.</h2>
       <p>Tell us a little about your agency and the workflows you would most like to improve.</p>
     </div>
-    <form class="lead-form compact" data-form="demo"><label>Full name<input name="name" required /></label><label>Work
-        email<input name="email" type="email" required /></label><label class="full-width">Company<input name="company"
-          required /></label><label class="full-width">What would you like to see?<textarea name="message"
-          rows="4"></textarea>
+    <form class="lead-form compact" data-form="demo">
+      <label>Full name<input name="name" required /></label>
+      <label>Work email<input name="email" type="email" required /></label>
+      <label class="full-width">Company<input name="company" required /></label>
+      <label class="full-width">What would you like to see?<textarea name="message" rows="4"></textarea></label>
+      <button class="btn btn-primary btn-large full-width" type="submit">Request guided demo</button>
+    </form>
   </template>
   <template id="quoteTemplate">
     <div class="modal-head"><span class="eyebrow">EARLY ACCESS</span>
@@ -386,7 +391,7 @@
         </select></label><label class="full-width">Approximate managed properties<input name="records" /></label><button
         class="btn btn-primary btn-large full-width" type="submit">Register interest</button></form>
   </template>
-  <script src="script.js?v=2.2.0"></script>
+  <script src="script.js?v=2.2.1"></script>
 </body>
 
 </html>
