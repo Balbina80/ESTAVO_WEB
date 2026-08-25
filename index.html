@@ -68,50 +68,34 @@
           </div>
         </div>
 
-        <div class="product-shell product-shell-v2 reveal" aria-label="Estavo property dashboard preview">
+        <div class="product-shell product-shell-v2 reveal" aria-label="Estavo agency dashboard preview">
           <div class="window-bar"><span></span><span></span><span></span><small>app.estavo.io</small></div>
-          <div class="dashboard">
+          <div class="dashboard dashboard-current">
             <aside class="sidebar">
               <div class="mini-brand"><img src="assets/favicon.png" alt="" /></div>
-              <a
-                class="active">Dashboard</a><a>Properties</a><a>Landlords</a><a>Tenants</a><a>Tenancies</a><a>Maintenance</a><a>Documents</a>
+              <a class="active">Dashboard</a><a>Properties</a><a>Landlords</a><a>Tenants</a><a>Applicants</a><a>Compliance</a><a>Inventory</a><a>Maintenance</a><a>Diary</a><a>Documents</a>
             </aside>
             <div class="dash-main">
-              <div class="dash-top">
-                <div><small>Thursday, 30 July</small>
-                  <h3>Good evening, Barbara</h3>
-                </div>
-                <div class="round">+</div>
+              <div class="preview-welcome">
+                <div><small>Tuesday, 25 August 2026</small><h3>Good morning.</h3><p>Here’s what needs your attention across your portfolio today.</p></div>
+                <img src="assets/estavo-logo.png" alt="Estavo" />
               </div>
-              <div class="metric-grid">
-                <article><small>Managed properties</small><strong data-count="27">27</strong><span>Portfolio
-                    overview</span></article>
-                <article><small>Open maintenance</small><strong data-count="6">6</strong><span>2 need attention</span>
-                </article>
-                <article><small>Compliance due soon</small><strong data-count="4">4</strong><span>Next 30 days</span>
-                </article>
+              <div class="metric-grid metric-grid-four">
+                <article><small>Properties</small><strong>53</strong><span>49 managed</span></article>
+                <article><small>Landlords</small><strong>29</strong><span>Client records</span></article>
+                <article><small>Active tenants</small><strong>47</strong><span>Current records</span></article>
+                <article><small>Open maintenance</small><strong>2</strong><span>Needs attention</span></article>
               </div>
-              <div class="dashboard-lower">
-                <article class="activity-card">
-                  <div class="card-heading">
-                    <h4>Today’s priorities</h4><span>View all</span>
-                  </div>
-                  <ul>
-                    <li><i></i>Gas safety certificate due <time>2 days</time></li>
-                    <li><i></i>New tenancy ready for review <time>Today</time></li>
-                    <li><i></i>Maintenance update received <time>1h</time></li>
-                    <li><i></i>Landlord statement prepared <time>3h</time></li>
-                  </ul>
+              <div class="dashboard-lower dashboard-lower-current">
+                <article class="activity-card preview-tasks">
+                  <div class="card-heading"><h4>Today’s Tasks</h4><span>+ Add Task</span></div>
+                  <div class="preview-filters"><b>Today</b><span>This Week</span><span>Urgent</span><span>All</span></div>
+                  <div class="preview-task-stats"><span><small>Overdue</small><strong>1</strong></span><span><small>Today</small><strong>4</strong></span><span><small>Next 7 days</small><strong>9</strong></span></div>
+                  <ul><li><i></i>Gas Safety expires today <time>Today</time></li><li><i></i>Inventory appointment <time>10:00</time></li></ul>
                 </article>
-                <article class="ai-card">
-                  <div class="ai-title"><b>✦</b>
-                    <div>
-                      <h4>Estavo Assistant</h4><small>Workspace-aware support</small>
-                    </div>
-                  </div>
-                  <div class="prompt">What needs my attention?</div>
-                  <div class="ai-response"><strong>Four items need action.</strong><br />Two compliance deadlines, one
-                    tenancy review and one landlord update.</div>
+                <article class="ai-card preview-actions">
+                  <h4>Quick Actions</h4>
+                  <div class="quick-action-grid"><span>▦<b>Add Property</b></span><span>▤<b>Add Certificate</b></span><span>▣<b>Book Inventory</b></span><span>↥<b>Upload Document</b></span></div>
                 </article>
               </div>
             </div>
@@ -271,15 +255,15 @@
             <h3>Agency Workspace</h3>
             <p>Lettings, property operations, people, tenancies, maintenance, documents and compliance.</p>
           </article>
+          <article class="roadmap-card reveal"><span class="roadmap-status future">FINAL TESTING</span>
+            <div class="roadmap-icon">🧾</div>
+            <h3>Self-employed Workspace</h3>
+            <p>Income, expenses, receipts and tax records in one simple workspace, with accountant-ready information.</p>
+          </article>
           <article class="roadmap-card reveal"><span class="roadmap-status future">NEXT</span>
             <div class="roadmap-icon">🏡</div>
             <h3>Landlord Workspace</h3>
             <p>A clear view of properties, statements, documents, maintenance and compliance.</p>
-          </article>
-          <article class="roadmap-card reveal"><span class="roadmap-status future">PLANNED</span>
-            <div class="roadmap-icon">🧾</div>
-            <h3>Self-employed Workspace</h3>
-            <p>Digital records for income, expenses, receipts and accountant-ready information.</p>
           </article>
           <article class="roadmap-card reveal"><span class="roadmap-status future">FUTURE</span>
             <div class="roadmap-icon">📊</div>
@@ -287,8 +271,7 @@
             <p>Better financial visibility, document organisation and business reporting.</p>
           </article>
         </div>
-        <p class="roadmap-note reveal">Roadmap priorities may change as we learn from Private Beta and Early Access
-          customers.</p>
+        <p class="roadmap-note reveal">Estavo is growing through real-world testing, customer feedback and carefully planned development.</p>
       </div>
     </section>
 

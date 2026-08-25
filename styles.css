@@ -3984,3 +3984,37 @@ body {
   cursor: wait;
   opacity: .72;
 }
+
+/* Homepage product preview aligned with the current Estavo Agency Workspace */
+.product-shell-v2 .dashboard-current { min-height: 405px; }
+.product-shell-v2 .dashboard-current .sidebar { width: 118px; padding: 14px 9px; gap: 3px; }
+.product-shell-v2 .dashboard-current .sidebar a { font-size: 8px; padding: 6px 7px; border-radius: 7px; }
+.product-shell-v2 .dashboard-current .mini-brand { margin-bottom: 7px; }
+.product-shell-v2 .dashboard-current .mini-brand img { width: 31px; }
+.product-shell-v2 .dashboard-current .dash-main { padding: 13px; background: #f7f8fb; }
+.preview-welcome { min-height: 74px; border: 1px solid rgba(199,158,67,.28); border-radius: 15px; background: linear-gradient(110deg,#fff 0%,#fff 70%,#fbf8ef 100%); padding: 13px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.preview-welcome small { color:#927326; font-weight:700; text-transform:uppercase; letter-spacing:.08em; font-size:7px; }
+.preview-welcome h3 { margin:3px 0 2px; font-size:18px; color:#0d1834; }
+.preview-welcome p { margin:0; color:#738096; font-size:7px; }
+.preview-welcome img { width:118px; max-height:50px; object-fit:contain; }
+.product-shell-v2 .metric-grid-four { grid-template-columns:repeat(4,1fr); gap:7px; margin-top:8px; }
+.product-shell-v2 .metric-grid-four article { min-width:0; padding:9px 10px; border-radius:12px; }
+.product-shell-v2 .metric-grid-four article small { font-size:6px; letter-spacing:.06em; text-transform:uppercase; }
+.product-shell-v2 .metric-grid-four article strong { font-size:17px; margin:1px 0; }
+.product-shell-v2 .metric-grid-four article span { font-size:6px; }
+.product-shell-v2 .dashboard-lower-current { grid-template-columns:1.55fr .8fr; margin-top:8px; align-items:stretch; }
+.preview-tasks .card-heading h4,.preview-actions h4 { font-size:11px; margin:0; }
+.preview-tasks .card-heading span { background:#0d1834; color:#fff; border-radius:6px; padding:4px 6px; font-size:6px; }
+.preview-filters { display:flex; gap:4px; margin:7px 0; }
+.preview-filters span,.preview-filters b { border:1px solid #dde2eb; border-radius:12px; padding:3px 7px; font-size:6px; font-weight:500; }
+.preview-filters b { border-color:#d6b45c; background:#fbf8ef; }
+.preview-task-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; margin-bottom:5px; }
+.preview-task-stats span { border:1px solid #e1e4e9; border-radius:8px; padding:5px 6px; display:flex; flex-direction:column; }
+.preview-task-stats small { font-size:5px; color:#7d8798; }
+.preview-task-stats strong { font-size:10px; color:#18312e; }
+.preview-tasks ul li { font-size:6px; padding:5px 0; }
+.preview-actions { padding:11px !important; }
+.quick-action-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:9px; }
+.quick-action-grid span { min-height:43px; border:1px solid #e0e4eb; border-radius:9px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; color:#c6a346; font-size:11px; }
+.quick-action-grid b { color:#0d1834; font-size:6px; }
+@media (max-width: 760px) { .preview-welcome img { width:90px; } .product-shell-v2 .metric-grid-four { grid-template-columns:repeat(2,1fr); } .product-shell-v2 .dashboard-lower-current { grid-template-columns:1fr; } }
