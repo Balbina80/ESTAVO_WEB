@@ -4166,3 +4166,184 @@ body {
         text-align: left;
     }
 }
+
+/* =========================================================
+   ESTAVO V2.4 - IMMERSIVE HERO BACKGROUND
+   Product workspace becomes the visual canvas behind the hero copy.
+   ========================================================= */
+.hero-showcase-layout {
+    position: relative;
+    min-height: 720px;
+    padding-top: 92px;
+    padding-bottom: 82px;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(circle at 78% 42%, rgba(213,168,51,.12), transparent 34%),
+        linear-gradient(100deg, #ffffff 0%, rgba(255,255,255,.98) 35%, rgba(255,255,255,.72) 58%, rgba(251,252,255,.35) 100%);
+}
+
+.hero-showcase-layout > .container {
+    position: relative;
+    min-height: 545px;
+}
+
+.hero-showcase-layout .hero-copy-centred {
+    position: relative;
+    z-index: 4;
+    max-width: 660px;
+    margin: 0;
+    padding-top: 34px;
+    text-align: left;
+}
+
+.hero-showcase-layout .hero-copy-centred h1 {
+    max-width: 660px;
+    margin-inline: 0;
+    font-size: clamp(54px, 6vw, 84px);
+    text-shadow: 0 2px 18px rgba(255,255,255,.82);
+}
+
+.hero-showcase-layout .hero-kicker,
+.hero-showcase-layout .hero-lead {
+    margin-inline: 0;
+}
+
+.hero-showcase-layout .hero-lead {
+    max-width: 570px;
+}
+
+.hero-showcase-layout .hero-actions {
+    justify-content: flex-start;
+}
+
+.hero-product-stage {
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 43%;
+    width: min(1040px, 74vw);
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+.hero-product-stage::before {
+    inset: -8% -7% -12%;
+    border-radius: 54px;
+    background: radial-gradient(circle at 54% 38%, rgba(213,168,51,.20), rgba(7,25,54,.06) 50%, transparent 73%);
+    filter: blur(24px);
+}
+
+.hero-product-stage .product-shell-v2 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    transform: none !important;
+    animation: none !important;
+    opacity: .93;
+    box-shadow: 0 32px 90px rgba(7,25,54,.16), 0 10px 30px rgba(7,25,54,.08);
+}
+
+.hero-product-stage .product-shell-v2 .dashboard {
+    min-height: 500px;
+}
+
+.hero-showcase-layout::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg,
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,.98) 28%,
+        rgba(255,255,255,.88) 40%,
+        rgba(255,255,255,.32) 58%,
+        rgba(255,255,255,0) 76%);
+}
+
+.hero-benefits {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    bottom: -8px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    max-width: 720px;
+    margin: 0;
+}
+
+.hero-benefits span {
+    display: inline-flex;
+    min-height: 0;
+    padding: 0 15px;
+    border: 0;
+    border-right: 1px solid rgba(7,25,54,.14);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    color: #647086;
+    font-size: 11px;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.hero-benefits span:first-child { padding-left: 0; }
+.hero-benefits span:last-child { border-right: 0; }
+
+@media (max-width: 980px) {
+    .hero-showcase-layout {
+        min-height: auto;
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+    .hero-showcase-layout > .container { min-height: 650px; }
+    .hero-showcase-layout .hero-copy-centred {
+        max-width: 620px;
+        padding-top: 0;
+    }
+    .hero-product-stage {
+        top: 245px;
+        left: 20%;
+        width: 92vw;
+    }
+    .hero-showcase-layout::after {
+        background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,.97) 30%, rgba(255,255,255,.58) 51%, rgba(255,255,255,0) 76%);
+    }
+    .hero-benefits { bottom: -4px; max-width: 680px; }
+}
+
+@media (max-width: 700px) {
+    .hero-showcase-layout {
+        padding-top: 36px;
+        padding-bottom: 42px;
+    }
+    .hero-showcase-layout > .container { min-height: 700px; }
+    .hero-showcase-layout .hero-copy-centred h1 {
+        font-size: clamp(42px, 12vw, 58px);
+    }
+    .hero-showcase-layout .hero-lead { max-width: 94%; }
+    .hero-product-stage {
+        top: 330px;
+        left: 8%;
+        width: 126vw;
+    }
+    .hero-product-stage .product-shell-v2 { opacity: .88; }
+    .hero-product-stage .product-shell-v2 .dashboard { min-height: 405px; }
+    .hero-benefits {
+        left: 0;
+        bottom: 0;
+        display: grid;
+        gap: 6px;
+        max-width: 92%;
+    }
+    .hero-benefits span {
+        padding: 0;
+        border: 0;
+        font-size: 10px;
+    }
+}
