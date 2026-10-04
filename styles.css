@@ -4055,7 +4055,7 @@ body {
 
 .hero-product-stage {
     position: relative;
-    max-width: 1040px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 18px;
 }
@@ -4074,21 +4074,15 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 990px;
+    max-width: 1080px;
     margin: 0 auto;
-    transform: none;
-    transform-origin: center;
-    animation: heroShowcaseFloat 7s ease-in-out infinite;
-    box-shadow: 0 28px 72px rgba(7,25,54,.15), 0 8px 22px rgba(7,25,54,.07);
+    transform: perspective(1500px) rotateX(1deg);
+    transform-origin: center top;
+    box-shadow: 0 34px 90px rgba(7,25,54,.17), 0 8px 24px rgba(7,25,54,.08);
 }
 
 .hero-product-stage .product-shell-v2 .dashboard {
-    min-height: 430px;
-}
-
-@keyframes heroShowcaseFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    min-height: 465px;
 }
 
 .hero-benefits {
