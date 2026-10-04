@@ -4449,8 +4449,8 @@ body {
 
     .hero-product-stage {
         top: 24px;
-        left: 42.5%;
-        width: min(840px, 58vw);
+        left: 41.5%;
+        width: min(800px, 56vw);
     }
 
     .hero-product-stage .product-shell-v2 {
