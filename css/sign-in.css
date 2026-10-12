@@ -1,0 +1,24 @@
+body.signin-page{min-height:100vh;background:radial-gradient(ellipse at 80% 10%,#22395a 0%,transparent 45%),#0c192c;color:#f6f7fb;font-family:Inter,Arial,sans-serif;display:flex;flex-direction:column}.signin-header{width:min(1160px,calc(100% - 48px));margin:0 auto;padding:27px 0;display:flex;align-items:center;justify-content:space-between}.signin-header img{width:155px;max-height:60px;object-fit:contain}.signin-back{color:#d6dfed;text-decoration:none;font-size:14px}.signin-back:hover,.signin-help a:hover{color:#e3b75b}.signin-main{width:min(1030px,calc(100% - 36px));margin:auto; padding:60px 0 70px}.signin-intro{text-align:center;margin-bottom:42px}.signin-eyebrow{font-size:12px;letter-spacing:.2em;font-weight:700;color:#d5ae60}.signin-intro h1{font-size:clamp(30px,4vw,50px);line-height:1.17;margin:16px 0}.signin-intro p{color:#c1cbda;font-size:17px}.signin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.signin-card{border:1px solid #40516b;background:linear-gradient(145deg,#1c304c,#13243b);border-radius:22px;padding:35px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 15px 40px #0002}.signin-symbol{font-size:32px;color:#e5bb6a;border:1px solid #53647a;border-radius:14px;width:60px;height:60px;display:grid;place-items:center;margin-bottom:23px}.signin-status{font-size:10px;font-weight:800;letter-spacing:.12em;padding:7px 11px;border-radius:30px}.signin-status.live{color:#c8f3d8;background:#244c3c}.signin-status.beta{color:#ffe2a2;background:#51432b}.signin-card h2{font-size:25px;margin:17px 0 8px}.signin-card>p{line-height:1.7;color:#c6d0df;margin:0 0 28px}.signin-button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;margin-top:auto;background:#d7ac59;color:#101c30;text-decoration:none;border-radius:10px;padding:15px 18px;font-weight:750}.signin-button:hover{background:#efc77a}.signin-button.secondary{background:transparent;color:#f2d59b;border:1px solid #bb9652}.signin-button.secondary:hover{background:#3a3440}.signin-card .signin-note{font-size:12px;margin:15px 0 0;color:#aebbcf}.signin-help{text-align:center;color:#c5cfdd;margin-top:32px}.signin-help a{color:#e5bb6a}.signin-footer{text-align:center;color:#91a1b7;font-size:12px;padding:22px}@media(max-width:700px){.signin-grid{grid-template-columns:1fr}.signin-main{padding:35px 0 55px}.signin-card{padding:27px}.signin-header{width:calc(100% - 36px)}.signin-header img{width:120px}.signin-back{font-size:12px}}
+/* Compact four-workspace selector */
+.signin-header>a:first-child{background:#fff;border-radius:12px;padding:8px 13px;display:inline-flex;align-items:center;justify-content:center}
+.signin-header img{display:block;width:155px;max-height:54px;object-fit:contain}
+.signin-main{width:min(1050px,calc(100% - 36px));padding:24px 0 36px}
+.signin-intro{margin-bottom:26px}
+.signin-intro h1{font-size:clamp(29px,3.5vw,44px);margin:12px 0}
+.signin-intro p{font-size:15px}
+.signin-grid{gap:16px}
+.signin-card{padding:23px 26px;border-radius:17px;min-height:252px}
+.signin-symbol{width:42px;height:42px;font-size:25px;border-radius:10px;margin-bottom:12px}
+.signin-status{font-size:9px;padding:5px 9px}
+.signin-card h2{font-size:21px;margin:12px 0 6px}
+.signin-card>p{font-size:13px;line-height:1.5;margin:0 0 14px}
+.signin-button{padding:11px 14px;font-size:13px}
+.signin-card .signin-note{font-size:11px;margin:9px 0 0}
+.signin-status.soon{background:#354158;color:#d1d9e6}
+.signin-card.upcoming{background:linear-gradient(145deg,#1b2b43,#142238)}
+.signin-unavailable{margin-top:auto;border:1px solid #536078;color:#b9c5d6;border-radius:9px;padding:11px 14px;width:100%;text-align:center;font-size:13px;font-weight:650;cursor:not-allowed}
+.signin-help{margin-top:23px}
+@media(max-width:700px){.signin-main{padding:28px 0 38px}.signin-card{min-height:unset;padding:23px}.signin-header img{width:125px}.signin-intro{margin-bottom:23px}}
+
+/* Isolate workspace cards from global .coming badge positioning. */
+.signin-grid > .signin-card{position:relative;top:auto;right:auto;width:auto;min-width:0;letter-spacing:normal;color:#f6f7fb;font-size:inherit;font-weight:normal}
