@@ -4531,3 +4531,11 @@ body {
   .hero-showcase-layout .hero-copy-centred h1 { font-size: 32px; }
   .hero-product-stage .preview-welcome img { display: none; }
 }
+
+/* Mobile hero stacking: override legacy .hero-copy { order: 1 } rule.
+   Keep desktop positioning unchanged. */
+@media (max-width: 980px) {
+  .hero-showcase-layout > .container > .hero-copy-centred { order: 0; }
+  .hero-showcase-layout > .container > .hero-product-stage { order: 1; }
+  .hero-showcase-layout > .container > .hero-benefits { order: 2; }
+}
