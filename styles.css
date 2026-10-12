@@ -894,7 +894,7 @@ p {
     object-position: left center
 }
 
-.footer h4 {
+.footer h4, .footer h3 {
     color: #fff
 }
 
@@ -1921,7 +1921,7 @@ p {
     margin-bottom: 10px
 }
 
-.footer h4 {
+.footer h4, .footer h3 {
     margin-bottom: 18px
 }
 
@@ -3411,7 +3411,7 @@ body {
     color: #9ba8bc
 }
 
-.footer h4 {
+.footer h4, .footer h3 {
     font-size: 14px;
     margin: 5px 0 17px
 }
@@ -3994,7 +3994,7 @@ body {
 .product-shell-v2 .dashboard-current .dash-main { padding: 13px; background: #f7f8fb; }
 .preview-welcome { min-height: 74px; border: 1px solid rgba(199,158,67,.28); border-radius: 15px; background: linear-gradient(110deg,#fff 0%,#fff 70%,#fbf8ef 100%); padding: 13px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .preview-welcome small { color:#927326; font-weight:700; text-transform:uppercase; letter-spacing:.08em; font-size:7px; }
-.preview-welcome h3 { margin:3px 0 2px; font-size:18px; color:#0d1834; }
+.preview-welcome h2 { margin:3px 0 2px; font-size:18px; color:#0d1834; }
 .preview-welcome p { margin:0; color:#738096; font-size:7px; }
 .preview-welcome img { width:118px; max-height:50px; object-fit:contain; }
 .product-shell-v2 .metric-grid-four { grid-template-columns:repeat(4,1fr); gap:7px; margin-top:8px; }
@@ -4003,7 +4003,7 @@ body {
 .product-shell-v2 .metric-grid-four article strong { font-size:17px; margin:1px 0; }
 .product-shell-v2 .metric-grid-four article span { font-size:6px; }
 .product-shell-v2 .dashboard-lower-current { grid-template-columns:1.55fr .8fr; margin-top:8px; align-items:stretch; }
-.preview-tasks .card-heading h4,.preview-actions h4 { font-size:11px; margin:0; }
+.preview-tasks .card-heading h3,.preview-actions h3 { font-size:11px; margin:0; }
 .preview-tasks .card-heading span { background:#0d1834; color:#fff; border-radius:6px; padding:4px 6px; font-size:6px; }
 .preview-filters { display:flex; gap:4px; margin:7px 0; }
 .preview-filters span,.preview-filters b { border:1px solid #dde2eb; border-radius:12px; padding:3px 7px; font-size:6px; font-weight:500; }
@@ -4521,7 +4521,7 @@ body {
   .hero-product-stage .product-shell-v2 .dashboard-current .sidebar { display: none; }
   .hero-product-stage .product-shell-v2 .dashboard-current .dash-main { width: 100%; padding: 11px; }
   .hero-product-stage .preview-welcome { min-height: 64px; padding: 10px; }
-  .hero-product-stage .preview-welcome h3 { font-size: 16px; }
+  .hero-product-stage .preview-welcome h2 { font-size: 16px; }
   .hero-product-stage .preview-welcome img { width: 78px; }
   .hero-product-stage .metric-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .hero-product-stage .dashboard-lower-current { grid-template-columns: 1fr; }
@@ -4539,3 +4539,7 @@ body {
   .hero-showcase-layout > .container > .hero-product-stage { order: 1; }
   .hero-showcase-layout > .container > .hero-benefits { order: 2; }
 }
+
+/* HTML validation: accessible dashboard metric labels and static task label */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.activity-card .task-time{margin-left:auto;color:#8793a5}
