@@ -11,6 +11,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=2.2.0">
+  <style>
+    .workspace-pricing-section { padding-top: 16px; }
+    .workspace-pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .workspace-pricing-card { display: flex; flex-direction: column; align-items: flex-start; min-height: 295px; padding: 28px; border: 1px solid #e1e6ee; border-radius: 22px; background: #fff; box-shadow: 0 12px 34px rgba(12, 24, 50, .045); }
+    .workspace-pricing-card.is-available { border-color: #d6b75b; }
+    .workspace-pricing-status { display: inline-block; padding: 7px 11px; border-radius: 999px; background: #f1f3f7; color: #68748a; font-size: 11px; font-weight: 800; letter-spacing: .07em; }
+    .workspace-pricing-status.available, .workspace-pricing-status.testing { background: #f9f0d4; color: #8b6a18; }
+    .workspace-pricing-icon { margin-top: 15px; color: #b89234; font-size: 27px; line-height: 1; }
+    .workspace-pricing-card h2 { margin: 13px 0 8px; color: #101b3a; font-size: 22px; }
+    .workspace-pricing-card p { margin: 0 0 22px; color: #5b6880; line-height: 1.55; }
+    .workspace-pricing-card .btn, .workspace-pricing-unavailable { margin-top: auto; }
+    .workspace-pricing-unavailable { display: block; width: 100%; padding: 13px; border: 1px solid #e3e7ee; border-radius: 11px; background: #f5f6f8; color: #8791a3; text-align: center; font-weight: 700; }
+    #property-pricing { scroll-margin-top: 110px; }
+    @media (max-width: 700px) { .workspace-pricing-grid { grid-template-columns: 1fr; } .workspace-pricing-card { min-height: 0; } }
+  </style>
 </head>
 
 <body>
@@ -39,13 +54,51 @@
   </header>
   <main>
     <section class="subpage-hero">
-      <div class="container narrow"><span class="eyebrow">AGENCY WORKSPACE · ESTAVO PROPERTY</span>
-        <h1>Estavo Property — Pricing</h1>
-        <p>Simple, transparent pricing for UK letting and property management agencies. These plans apply to the Agency Workspace only; pricing for other Estavo workspaces will be announced separately.</p>
+      <div class="container narrow"><span class="eyebrow">ESTAVO WORKSPACE PRICING</span>
+        <h1>Find the right Estavo workspace.</h1>
+        <p>Explore our dedicated workspaces. Pricing is currently available for Estavo Property; plans for other workspaces will be announced as they become available.</p>
       </div>
     </section>
-    <section class="section">
+    <section class="section workspace-pricing-section" aria-label="Estavo workspace pricing options">
       <div class="container">
+        <div class="workspace-pricing-grid">
+          <article class="workspace-pricing-card is-available">
+            <span class="workspace-pricing-status available">PRICING AVAILABLE</span>
+            <div class="workspace-pricing-icon" aria-hidden="true">⌂</div>
+            <h2>Agency Workspace</h2>
+            <p>Property management for UK letting and estate agencies, from tenancies and compliance to maintenance and finance.</p>
+            <a class="btn btn-primary full" href="#property-pricing">View Property Pricing →</a>
+          </article>
+          <article class="workspace-pricing-card">
+            <span class="workspace-pricing-status testing">FINAL TESTING</span>
+            <div class="workspace-pricing-icon" aria-hidden="true">▤</div>
+            <h2>Accounting Workspace</h2>
+            <p>A secure accounting portal for clients and accountancy practices, with documents, deadlines and records in one place.</p>
+            <span class="workspace-pricing-unavailable">Pricing coming soon</span>
+          </article>
+          <article class="workspace-pricing-card">
+            <span class="workspace-pricing-status">COMING SOON</span>
+            <div class="workspace-pricing-icon" aria-hidden="true">⌂</div>
+            <h2>Landlord Workspace</h2>
+            <p>Access property information, statements, documents, maintenance updates and compliance records.</p>
+            <span class="workspace-pricing-unavailable">Pricing coming soon</span>
+          </article>
+          <article class="workspace-pricing-card">
+            <span class="workspace-pricing-status">COMING SOON</span>
+            <div class="workspace-pricing-icon" aria-hidden="true">▥</div>
+            <h2>Limited Company Workspace</h2>
+            <p>Planned tools for company bookkeeping, VAT, payroll, financial statements and corporation tax.</p>
+            <span class="workspace-pricing-unavailable">Pricing coming soon</span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="property-pricing">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">AGENCY WORKSPACE · ESTAVO PROPERTY</span>
+          <h2>Estavo Property — Pricing</h2>
+          <p>Simple, transparent pricing for UK letting and property management agencies. The plans below apply to Agency Workspace only.</p>
+        </div>
         <div class="pricing-grid">
           <article class="price-card"><span class="plan">Starter</span>
             <h3>£149<small>/month</small></h3>
