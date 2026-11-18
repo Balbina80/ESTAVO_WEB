@@ -4593,3 +4593,19 @@ body {
  .site-header .main-nav>a{font-size:11px}
  .site-header .nav-actions .btn{font-size:11px;padding:9px}
 }
+
+
+/* Consistent desktop header spacing and alignment */
+@media(min-width:1181px){
+ .site-header .nav-wrap{gap:22px}
+ .site-header .brand{flex:0 0 165px;width:165px}
+ .site-header .main-nav{gap:clamp(17px,1.35vw,24px);margin-left:auto}
+ .site-header .main-nav>a{font-size:13px;line-height:1.2;display:inline-flex;align-items:center;min-height:42px}
+ .site-header .nav-actions{gap:12px}
+ .site-header .nav-actions .btn{font-size:12px;padding:11px 15px}
+}
+@media(min-width:981px) and (max-width:1180px){
+ .site-header .nav-wrap{gap:13px}
+ .site-header .main-nav{gap:12px}
+ .site-header .main-nav>a{display:inline-flex;align-items:center;min-height:42px}
+}
