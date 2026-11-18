@@ -7,7 +7,7 @@
   <title>Contact | Estavo</title>
   <link rel="icon" href="assets/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2.2.0">
+  <link rel="stylesheet" href="styles.css?v=2.4.8">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
       <button class="menu-toggle" type="button" aria-label="Open navigation"
         aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#workspaces">Workspaces</a>
+        <a href="index.html#platform">Property Features</a>
         <a href="pricing.html">Pricing</a>
         <a href="security.html">Security</a>
         <a href="contact.html">Contact</a>
@@ -37,7 +37,7 @@
     <section class="subpage-hero">
       <div class="container narrow"><span class="eyebrow">CONTACT ESTAVO</span>
         <h1>Let’s make your working day simpler.</h1>
-        <p>Book a tailored demonstration, request a quote or ask a question about launch access.</p>
+        <p>Ask about Estavo Property, join the Estavo Accounting interest list or request a tailored demonstration.</p>
       </div>
     </section>
     <section class="section">
@@ -59,6 +59,14 @@
           </div>
         </div>
         <form class="lead-form" data-contact-form>
+          <label class="full-width">Interested in<select name="workspace" id="contactWorkspace" required>
+            <option value="">Select a workspace</option>
+            <option value="property">Estavo Property — Agency Workspace</option>
+            <option value="accounting">Estavo Accounting — Accounting Workspace</option>
+            <option value="landlord">Landlord Workspace — Coming Soon</option>
+            <option value="limited-company">Limited Company Workspace — Coming Soon</option>
+            <option value="general">General enquiry</option>
+          </select></label>
           <label>Full name<input name="name" autocomplete="name" maxlength="100" required></label>
           <label>Work email<input name="email" type="email" autocomplete="email" maxlength="180" required></label>
           <label>Company<input name="company" autocomplete="organization" maxlength="160" required></label>
