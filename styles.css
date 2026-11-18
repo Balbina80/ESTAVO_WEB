@@ -4576,3 +4576,20 @@ body {
 .estavo-workspace-actions .btn{padding:10px 14px;font-size:13px}
 .estavo-workspace-link{font-size:13px}
 @media(max-width:760px){.estavo-workspaces-section{padding-top:42px;padding-bottom:45px}.estavo-workspace-card{padding:22px}.estavo-workspaces-grid{gap:14px}}
+
+
+/* Desktop navigation: prevent wrapped links after adding Workspaces */
+@media(min-width:981px){
+ .site-header .nav-wrap{gap:16px;flex-wrap:nowrap}
+ .site-header .brand{flex:0 0 155px;width:155px;min-width:0}
+ .site-header .main-nav{display:flex;align-items:center;gap:clamp(10px,1.15vw,19px);margin-left:auto;min-width:0}
+ .site-header .main-nav>a{white-space:nowrap;font-size:clamp(11px,.83vw,13px)}
+ .site-header .nav-actions{display:flex;align-items:center;gap:7px;flex-shrink:0}
+ .site-header .nav-actions .btn{white-space:nowrap;font-size:12px;padding:10px 12px}
+}
+@media(min-width:981px) and (max-width:1180px){
+ .site-header .brand{flex-basis:130px;width:130px}
+ .site-header .main-nav{gap:9px}
+ .site-header .main-nav>a{font-size:11px}
+ .site-header .nav-actions .btn{font-size:11px;padding:9px}
+}
