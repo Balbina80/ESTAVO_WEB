@@ -4561,3 +4561,18 @@ body {
 .estavo-workspace-link{font-weight:700;color:#173d76;font-size:14px}
 .estavo-workspace-link:hover{text-decoration:underline}
 @media(max-width:760px){.estavo-workspaces-grid{grid-template-columns:1fr}.estavo-workspace-card{padding:26px}.estavo-workspace-actions{align-items:stretch;flex-direction:column;width:100%}.estavo-workspace-actions .btn{width:100%}}
+
+
+/* Compact workspace tiles: homepage and pricing */
+.estavo-workspaces-section{padding-top:58px;padding-bottom:62px}
+.estavo-workspaces-section .section-heading{margin-bottom:26px}
+.estavo-workspaces-grid{max-width:1050px;margin-inline:auto;gap:18px}
+.estavo-workspace-card{padding:24px 26px;border-radius:18px}
+.estavo-workspace-symbol{width:42px;height:42px;margin:14px 0 9px;border-radius:12px;font-size:23px}
+.estavo-workspace-card h3{font-size:clamp(23px,2.4vw,27px);margin-bottom:7px}
+.estavo-workspace-card p{font-size:14px;line-height:1.5;margin-bottom:10px}
+.estavo-workspace-card ul{font-size:13px;line-height:1.65;margin-bottom:17px}
+.estavo-workspace-actions{gap:12px}
+.estavo-workspace-actions .btn{padding:10px 14px;font-size:13px}
+.estavo-workspace-link{font-size:13px}
+@media(max-width:760px){.estavo-workspaces-section{padding-top:42px;padding-bottom:45px}.estavo-workspace-card{padding:22px}.estavo-workspaces-grid{gap:14px}}
