@@ -31,6 +31,17 @@
 .accounting-note p{color:#58677d;line-height:1.65}
 @media(max-width:800px){.accounting-features{grid-template-columns:1fr 1fr}.accounting-hero{padding:60px 0}.accounting-section{padding:48px 0}}
 @media(max-width:560px){.accounting-features{grid-template-columns:1fr}.accounting-actions .btn{width:100%}.accounting-note{padding:24px}}
+
+.accounting-portal{background:#111d34;color:#fff;padding:76px 0}
+.accounting-portal-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:42px}
+.accounting-portal .eyebrow{color:#e1bb61}
+.accounting-portal h2{font-size:clamp(28px,3.3vw,43px);line-height:1.2;color:#fff;margin:15px 0 18px}
+.accounting-portal p{color:#e0e5ee;line-height:1.7}
+.accounting-portal ul{padding-left:21px;line-height:2;color:#fff}
+.accounting-portal li::marker{color:#e0b44c}
+.accounting-portal-image{width:100%;display:block;border-radius:16px;background:#f7f4ec;box-shadow:0 18px 45px rgba(0,0,0,.2)}
+.accounting-portal figcaption{font-size:12px;color:#bfc8d8;text-align:center;margin-top:12px}
+@media(max-width:800px){.accounting-portal-grid{grid-template-columns:1fr}.accounting-portal{padding:50px 0}.accounting-portal-grid{gap:25px}}
 </style>
 </head>
 <body>
@@ -77,6 +88,19 @@
 <article class="accounting-feature"><div class="accounting-feature-icon" aria-hidden="true">☷</div><h3>Practice overview</h3><p>Get a clearer view of clients, onboarding progress and upcoming work.</p></article>
 <article class="accounting-feature"><div class="accounting-feature-icon" aria-hidden="true">↗</div><h3>Room to grow</h3><p>A developing workspace built with future practice workflows in mind.</p></article>
 </div>
+</div>
+</section>
+<section class="accounting-portal" aria-labelledby="accounting-portal-heading">
+<div class="container accounting-portal-grid">
+<div>
+<span class="eyebrow">CONNECTED CLIENT EXPERIENCE</span>
+<h2 id="accounting-portal-heading">Give clients a clearer view of their accounting essentials.</h2>
+<p>Alongside the practice workspace, we are developing a client-facing portal experience for self-employed individuals. It is designed to bring important information into one accessible place.</p>
+<ul><li>View upcoming accounting deadlines</li><li>Keep documents together</li><li>Find key account details</li><li>Stay organised between conversations with your bookkeeper</li></ul>
+<p><strong>In development:</strong> this is an illustrative preview using fictional data. Features and availability may change.</p>
+<a class="btn btn-primary" href="contact.html?workspace=accounting">Ask about early access</a>
+</div>
+<figure><img class="accounting-portal-image" src="https://precision-books.co.uk/images/estavo-workspace-collage.png" alt="Illustrative Estavo client portal screens showing a dashboard, deadlines, documents and account details" loading="lazy" decoding="async"><figcaption>Illustrative client portal preview with sample data · Not a live product screenshot</figcaption></figure>
 </div>
 </section>
 <section class="accounting-section" style="padding-top:0"><div class="container"><div class="accounting-note"><span class="eyebrow">AVAILABILITY</span><h2>Currently in final testing.</h2><p>Estavo Accounting is not yet offered as a generally available subscription. Contact us to register your interest and discuss your practice's needs.</p><a class="btn btn-primary" href="contact.html?workspace=accounting">Register your interest</a></div></div></section>
