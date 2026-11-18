@@ -42,6 +42,13 @@
 .accounting-portal-image{width:100%;display:block;border-radius:16px;background:#f7f4ec;box-shadow:0 18px 45px rgba(0,0,0,.2)}
 .accounting-portal figcaption{font-size:12px;color:#bfc8d8;text-align:center;margin-top:12px}
 @media(max-width:800px){.accounting-portal-grid{grid-template-columns:1fr}.accounting-portal{padding:50px 0}.accounting-portal-grid{gap:25px}}
+
+/* Larger client portal preview on desktop */
+@media(min-width:1000px){
+ .accounting-portal .container{max-width:1480px;width:calc(100% - 64px)}
+ .accounting-portal-grid{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:34px}
+ .accounting-portal-image{width:100%;height:auto}
+}
 </style>
 </head>
 <body>
