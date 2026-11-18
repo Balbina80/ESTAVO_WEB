@@ -102,3 +102,11 @@ function bindContactForms() {
 }
 
 bindContactForms();
+
+// Preselect the workspace when a visitor follows a product-specific enquiry link.
+(function preselectContactWorkspace(){
+  const field=document.getElementById('contactWorkspace');
+  if(!field)return;
+  const requested=new URLSearchParams(window.location.search).get('workspace');
+  if(requested && Array.from(field.options).some(option=>option.value===requested))field.value=requested;
+})();
